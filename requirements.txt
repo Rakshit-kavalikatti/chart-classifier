@@ -1,0 +1,18 @@
+
+# Core ML dependencies
+torch==2.2.0
+torchvision==0.17.0
+transformers==4.39.3
+
+# Image and scientific packages
+Pillow==10.2.0
+numpy==1.26.4
+tqdm==4.66.2
+
+# Utility libraries
+requests==2.31.0
+pyshortcuts==1.9.3
+platformdirs==4.2.0
+
+# Optional for terminal progress or future expansion
+colorama==0.4.6
