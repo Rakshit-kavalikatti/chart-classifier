@@ -24,8 +24,8 @@ Follow these steps to set up and run the application:
 1. **Clone the repository**:
 
 ```bash
-git clone <https://github.com/Rakshit-kavalikatti/chart-classifier.git>
-cd <chart-classifier>
+git clone https://github.com/Rakshit-kavalikatti/chart-classifier.git
+cd chart-classifier
 ```
 
 2. **Install required packages**:
@@ -40,8 +40,13 @@ This will:
 - Download the pre-trained ViT model for offline use  
 - Create a global CLI command `chart` to run predictions  
 
+- For Windows:
 ```bash
 python set_up.py
+```
+- For Linux:
+```bash
+python3 set_up.py
 ```
 
 4. **Predict chart type**
