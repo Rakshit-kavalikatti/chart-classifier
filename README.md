@@ -1,3 +1,4 @@
+
 # Chart Classifier
 
 ![Chart Classifier](https://img.shields.io/badge/status-ready-brightgreen)
@@ -23,12 +24,16 @@ Follow these steps to set up and run the application:
 1. **Clone the repository**:
 
 ```bash
-git clone <repository_url>
+git clone <https://github.com/Rakshit-kavalikatti/chart-classifier.git>
 cd <repository_folder>
+```
 
+2. **Install required packages**:
+```bash
 pip install -r requirements.txt
+```
 
-3. **Run the setup script**  
+3. **Run the setup script**:
 
 This will:  
 - Create `config.json` storing the model path  
@@ -37,17 +42,20 @@ This will:
 
 ```bash
 python set_up.py
-
+```
 
 4. **Predict chart type**
 
 - **Using the CLI command**:
 
-```bash
+```
 chart /path/to/chart_image.png
+```
 
-
+5. **Output**:
+```json
 {
     "predicted_class": "bar",
     "confidence_score": 0.987
 }
+```
