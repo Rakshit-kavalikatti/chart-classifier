@@ -25,7 +25,7 @@ Follow these steps to set up and run the application:
 
 ```bash
 git clone <https://github.com/Rakshit-kavalikatti/chart-classifier.git>
-cd <repository_folder>
+cd <chart-classifier>
 ```
 
 2. **Install required packages**:
