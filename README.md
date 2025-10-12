@@ -1,38 +1,53 @@
 # Chart Classifier
 
-# 📊 Camera Activity Monitoring Dashboard
+![Chart Classifier](https://img.shields.io/badge/status-ready-brightgreen)
 
-This application is a **real-time camera activity monitoring tool** built with **Python**, **Tkinter**, and **Matplotlib**.  
-It visualizes camera uptime, downtime, and AI solution performance using **interactive charts** and **live progress updates**.
+## Overview
 
----
+**Chart Classifier** is a Python application that predicts the type of chart from an input image.  
+It uses a pre-trained Vision Transformer (ViT) model to classify chart images offline and outputs the predicted class along with a confidence score.  
+This project provides an easy way to classify charts using Python and supports multiple chart types.
 
-## 🚀 Features
+## Features
 
-✅ **Real-Time Monitoring** – Displays live data of camera status (Online/Offline).  
-✅ **Dynamic Charts** – Auto-updating bar and pie charts for visual insights.  
-✅ **AI Solution Analysis** – Shows AI solution failures and processing percentages.  
-✅ **Progress Visualization** – Smooth progress bar updates while data loads.  
-✅ **User-Friendly GUI** – Clean, responsive interface built with Tkinter.  
-✅ **Configurable** – Easily adaptable for different camera or AI systems.  
+- Classifies chart images (bar chart, line chart, pie chart, etc.)
+- Offline inference using a pre-trained ViT model
+- Outputs results in JSON format
+- Easy-to-use CLI command `chart <image_path>` after setup
+- Works on Windows, Linux, and macOS
 
----
+## Setup & Usage
 
-## 🧩 Tech Stack
+Follow these steps to set up and run the application:
 
-- **Python 3.12+**
-- **Tkinter** – GUI framework
-- **Matplotlib** – Chart plotting
-- **Pandas** – Data handling
-- **Threading** – For smooth UI updates
-- **PyShortcuts** – (Optional) for creating desktop shortcuts
+1. **Clone the repository**:
 
----
+```bash
+git clone <repository_url>
+cd <repository_folder>
 
-## ⚙️ Installation & Setup
+pip install -r requirements.txt
 
-Follow these steps carefully to set up and run the application from scratch.
+3. **Run the setup script**  
 
-### 1️⃣ Install Python
-Download and install **Python 3.12 or higher** from [Python.org](https://www.python.org/downloads/).  
-During installation, **check the box** for:
+This will:  
+- Create `config.json` storing the model path  
+- Download the pre-trained ViT model for offline use  
+- Create a global CLI command `chart` to run predictions  
+
+```bash
+python set_up.py
+
+
+4. **Predict chart type**
+
+- **Using the CLI command**:
+
+```bash
+chart /path/to/chart_image.png
+
+
+{
+    "predicted_class": "bar",
+    "confidence_score": 0.987
+}
