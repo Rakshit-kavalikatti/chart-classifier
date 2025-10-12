@@ -41,11 +41,11 @@ This will:
 - Create a global CLI command `chart` to run predictions  
 
 
-- ****For Windows****:
+****For Windows****:
 ```bash
 python set_up.py
 ```
-- ****For Linux****:
+ ****For Linux****:
 ```bash
 python3 set_up.py
 ```
