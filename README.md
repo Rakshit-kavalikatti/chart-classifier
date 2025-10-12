@@ -15,7 +15,7 @@ This project provides an easy way to classify charts using Python and supports m
 - Offline inference using a pre-trained ViT model
 - Outputs results in JSON format
 - Easy-to-use CLI command `chart <image_path>` after setup
-- Works on Windows, Linux, and macOS
+- Works on Windows and Linux
 
 ## Setup & Usage
 
@@ -40,11 +40,12 @@ This will:
 - Download the pre-trained ViT model for offline use  
 - Create a global CLI command `chart` to run predictions  
 
-- For Windows:
+
+- ****For Windows****:
 ```bash
 python set_up.py
 ```
-- For Linux:
+- ****For Linux****:
 ```bash
 python3 set_up.py
 ```
